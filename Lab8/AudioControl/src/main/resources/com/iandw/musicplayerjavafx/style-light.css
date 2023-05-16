@@ -1,0 +1,52 @@
+
+/* Sliders */
+.slider {
+    -default-track-color: -fx-control-inner-background;
+    -track-color: -default-track-color;
+}
+
+.slider .track {
+    -fx-background-color: -fx-shadow-highlight-color,
+        linear-gradient(to bottom, derive(-fx-text-box-border, -10%),
+        -fx-text-box-border), -track-color;
+}
+
+/* Search Field */
+.delete-button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+
+/* Context Menu */
+.context-menu > * > .separator > .line {
+    -fx-border-insets: 5px;
+}
+
+/* Delete Icon Color */
+.delete-icon: hover {
+    -fx-icon-color: DodgerBlue;
+}
+
+/*  Icon Color */
+ .icon {
+    -fx-icon-color: DimGrey;
+ }
+
+ /* Menu Icon */
+ .menu-icon {
+    -fx-icon-color: DimGrey;
+ }
+
+.menu-item: focused .menu-icon {
+    -fx-icon-color: white;
+}
+
+.menu-item: selected .menu-icon {
+    -fx-icon-color: white;
+}
+
+
+
+

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PetWalk Tracking</string>
+    <string name="distance_covered">Distance in KM :</string>
+    <string name="need_location">Enable GPS SERVICE</string>
+    <string name="location_content">Petwalk wants to change your device settings use GPS,Wi-Fi and cell networks for
+        your location
+    </string>
+</resources>

@@ -1,0 +1,457 @@
+/*  Root */
+.root {
+
+    -primary: #4e5254; /* dark grey */
+    -secondary: #4db34d66; /* Green */
+    -secondary-armed: LightGrey;
+    -tertiary: #222630; /* dark blue-grey */
+    -quaternary: #363840; /* medium blue-grey */
+
+    -odd-cell: #292a3090;
+    -even-cell: #2f323990;
+
+    -text-normal: #4db34d;
+    -text-hover: #e6e6e6;
+    -text-selected: #e6e6e6;
+
+    -hover-background: #93f9b911;
+    -highlight-fill: -secondary;
+    -text-background-selected: #1aa3ff;
+    -selected-fill: #b97a9c;
+
+    -icon-color: #4db34d;
+
+    -hor-gradient: linear-gradient(to left, -tertiary, -quaternary);
+    -ver-gradient: linear-gradient(to bottom, -quaternary, -tertiary);
+
+
+
+}
+
+/* MusicPlayerController */
+.anchor-pane {
+    -fx-background-color: -tertiary;
+    -fx-padding: 10px 15px;
+}
+
+.split-pane {
+    -fx-background-color: -tertiary;
+
+}
+
+.split-pane: horizontal > .split-pane-divider {
+    -fx-background-color: -hor-gradient;
+    -fx-background-radius: 2px;
+}
+
+.split-pane: vertical > .split-pane-divider {
+    -fx-background-color: -ver-gradient;
+    -fx-background-radius: 2px;
+}
+
+.shadow-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+.anchor-pane .corner {
+    -fx-background-color: transparent;
+}
+
+.button {
+    -fx-background-color: -quaternary;
+}
+
+.button .label {
+    -fx-text-fill: -text-normal;
+}
+
+.button: hover {
+    -fx-background-color: -hover-background;
+}
+
+.button: armed {
+    -fx-background-color: -secondary;
+}
+
+.button: focused {
+    -fx-border-color: -secondary;
+    -fx-border-radius: 3px, 3px, 2px, 1px;
+}
+
+
+/* Table View */
+
+.table-view,
+.table-view .column-header,
+.tableview.column-header-background .filler,
+.table-view .corner .label {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: -text-normal;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: -ver-gradient;
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 11px 0 0;
+}
+
+.table-view .table-cell {
+    -fx-border-color: transparent;
+    -fx-text-fill: -text-normal;
+}
+
+.table-row-cell: odd {
+    -fx-background-color: -odd-cell;
+}
+
+.table-row-cell: even {
+    -fx-background-color: -even-cell;
+}
+
+.table-row-cell: hover .table-cell {
+    -fx-text-fill: -text-hover;
+    -fx-background-color: -hover-background;
+    -fx-text-background-color: -secondary;
+}
+
+.table-row-cell: highlighted {
+    -fx-background-color: -primary;
+    -fx-highlight-fill: -highlight-fill;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 2px;
+}
+
+.table-row-cell: selected {
+    -fx-background-color: transparent;
+    -fx-text-background-color: -text-background-selected;
+    -fx-selected-fill: -selected-fill;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 2px;
+}
+
+.table-row-cell: selected .table-cell {
+    -fx-text-fill: -text-selected;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: -tertiary;
+}
+
+/* Table View Scroll Bar */
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: -tertiary;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  -quaternary
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  -quaternary
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+/* List View */
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.list-view .list-cell {
+    -fx-border-color: transparent;
+    -fx-text-fill: -text-normal;
+}
+
+.list-cell: odd {
+    -fx-background-color: -odd-cell;
+}
+
+.list-cell: even {
+    -fx-background-color: -even-cell;
+}
+
+.list-view .list-cell: hover {
+    -fx-text-fill: -text-hover;
+    -fx-background-color: -hover-background;
+    -fx-text-background-color: -secondary;
+}
+
+.list-view .list-cell: highlighted {
+    -fx-background-color: -primary;
+    -fx-highlight-fill: -highlight-fill;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 2px;
+}
+
+.list-view .list-cell: selected {
+    -fx-background-color: transparent;
+    -fx-text-background-color: -text-background-selected;
+    -fx-text-fill: -text-selected;
+    -fx-selected-fill: -selected-fill;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 2px;
+}
+
+.list-view: selected .list-cell {
+    -fx-text-fill: -text-selected;
+}
+
+/* List View Scroll Bar */
+.list-view .virtual-flow .scroll-bar:vertical,
+.list-view .virtual-flow .scroll-bar:vertical .track,
+.list-view .virtual-flow .scroll-bar:vertical .track-background,
+.list-view .virtual-flow .scroll-bar:horizontal,
+.list-view .virtual-flow .scroll-bar:horizontal .track,
+.list-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.list-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  -quaternary
+}
+
+.list-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  -quaternary
+}
+
+.list-view .virtual-flow .scroll-bar .increment-button,
+.list-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+/* Sliders */
+.slider {
+    -fx-background-color: transparent;
+    -default-track-color: -tertiary;
+    -track-color: -quaternary;
+    -fx-shadow-highlight-color: -quaternary;
+}
+
+.slider .track {
+    -fx-background-color:  -fx-shadow-highlight-color,
+            linear-gradient(to bottom, derive(-fx-text-box-border, -10%),
+            -fx-text-box-border), -track-color;
+    -fx-border-color: -primary;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.slider .axis .axis-tick-mark,
+.slider .axis .axis-minor-tick-mark {
+    -fx-background-color: transparent;
+    -fx-stroke: -icon-color;
+}
+
+.slider .thumb {
+    -fx-background-color: -quaternary;
+    -fx-border-color: -primary;
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+}
+
+.slider: focused .thumb {
+    -fx-border-color: -secondary;
+}
+
+/*  Search Bar */
+.text-field {
+    -fx-text-fill: -text-normal;
+}
+.transparent {
+    -fx-background-color: transparent;
+}
+
+.transparent-background {
+    -fx-background-color: transparent;
+}
+
+.transparent-background > .viewport {
+    -fx-background-color: transparent;
+}
+
+.highlight-rectangle {
+    -fx-background-color: derive(-primary, 50%);
+    -fx-background-radius: 5px;
+}
+
+.delete-button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+
+/* Menu Bar */
+.menu-bar {
+    -fx-background-color: -ver-gradient;
+}
+
+.menu .menu-divider {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+}
+
+.menu: showing {
+    -fx-background-color: -primary;
+    -fx-border-color: transparent;
+    -fx-border-stroke: 0px;
+    -fx-highlight-fill: -highlight-fill;
+}
+
+.menu: hover {
+    -fx-text-fill: -text-hover;
+    -fx-background-color: -hover-background;
+    -fx-text-background-color: -secondary;
+}
+
+.menu: selected {
+    -fx-text-fill: -text-selected;
+    -fx-background-color: -secondary;
+    -fx-text-background-color: -text-background-selected;
+}
+
+/* Menu Item */
+.menu-item {
+    -fx-background-color: -tertiary;
+    -fx-border-color: transparent;
+    -fx-border-stroke: 0px;
+
+}
+
+.menu-item .label {
+    -fx-text-fill: -text-normal;
+}
+
+
+.menu-item: focused, .menu-item: hovered {
+    -fx-background-color: -tertiary;
+
+}
+
+.menu-item: selected .label {
+    -fx-text-fill: -text-selected;
+    -fx-background-color: -tertiary;
+    -fx-text-background-color: -text-background-selected;
+}
+
+
+.menu-item: hover .label {
+    -fx-text-fill: -text-hover;
+
+}
+
+/* Context Menu */
+.context-menu {
+    -fx-background-color: -tertiary;
+}
+
+.context-menu > * > .separator > .line {
+    -fx-border-color: -hover-background;
+    -fx-border-insets: 5px;
+}
+
+/* Check box */
+.check-box {
+    -fx-text-fill: -text-normal;
+
+}
+
+.check-box .box {
+    -fx-background-color: -quaternary;
+}
+
+.check-box: hover .box {
+    -fx-background-color: -hover-background;
+}
+
+.check-box: selected .box {
+    -fx-background-color: -secondary;
+}
+
+.check-box: selected .mark {
+    -fx-background-color: -text-selected;
+}
+
+/* Radio Button */
+.radio-button .radio {
+    -fx-background-color: -quaternary;
+}
+
+.radio-button: hover .radio {
+    -fx-background-color: -hover-background;
+}
+
+.radio-button: selected .radio {
+    -fx-background-color: -secondary;
+}
+
+.radio-button: selected .dot {
+    -fx-background-color: -text-selected;
+}
+
+/* Icon Color */
+.delete-icon{
+    -fx-icon-color: -icon-color;
+}
+
+.delete-icon: hover {
+    -fx-icon-color: -secondary-armed;
+}
+
+.delete-button: hover {
+    -fx-background-color: transparent;
+}
+
+.icon {
+    -fx-icon-color: -icon-color;
+}
+
+/* Menu Icons */
+ .menu-icon {
+    -fx-icon-color: -icon-color;
+ }
+
+.menu-item: focused .menu-icon {
+    -fx-icon-color: -text-selected;
+}
+
+.menu-item: focused .label {
+    -fx-text-fill: -text-selected;
+}
+
+.menu-item: selected .menu-icon {
+    -fx-icon-color: -text-selected;
+}
+
+ /* Labels */
+.label {
+    -fx-text-fill: -text-normal;
+}
+
+/* TextArea */
+.text-area {
+    -fx-background-color: -primary;
+    -fx-text-fill: -text-normal;
+}
+
+
+

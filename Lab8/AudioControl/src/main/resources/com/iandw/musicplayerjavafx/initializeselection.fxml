@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="240.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iandw.musicplayerjavafx.InitializeSelectionController">
+   <children>
+      <GridPane prefHeight="240.0" prefWidth="480.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="76.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="404.0" minWidth="10.0" prefWidth="404.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="141.0" minHeight="10.0" prefHeight="131.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="141.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="138.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="standardButton" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#standardClicked" prefWidth="66.0" text="Standard">
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="recursiveButton" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#recursiveClicked" text="Recursive" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Separator prefHeight="0.0" prefWidth="398.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Separator>
+            <Separator prefWidth="200.0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Separator>
+            <TextArea fx:id="textAreaStandard" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea fx:id="textAreaRecursive" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextArea>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

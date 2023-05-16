@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iandw.musicplayerjavafx.ViewTextController">
+   <children>
+      <TextArea fx:id="textArea" editable="false" layoutY="-2.0" prefHeight="366.0" prefWidth="590.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <HBox alignment="CENTER_RIGHT" layoutY="375.0" prefHeight="30.0" prefWidth="600.0">
+         <children>
+            <Button styleClass="button" fx:id="copyToClipboard" mnemonicParsing="false" onAction="#copyClicked" text="Copy to Clipboard" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" right="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

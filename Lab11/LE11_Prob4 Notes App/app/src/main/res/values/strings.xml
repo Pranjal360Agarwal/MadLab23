@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Keep Notes</string>
+
+    <!--    Drawer Menu     -->
+    <string name="note">Note</string>
+    <string name="remainder">Remainder</string>
+    <string name="more">More</string>
+    <string name="archive">Archive</string>
+    <string name="trash">Trash</string>
+    <string name="settings">Settings</string>
+    <string name="sample_text">This app is made by Rohan Sadhukhan for Educational Puspose Only</string>
+    <string name="others">Others</string>
+    <string name="about">About</string>
+
+    <!--    New Note    -->
+    <string name="title">Title</string>
+    <string name="note_text">Start write your notes</string>
+    <string name="demo_edited">Edited : XX / XX / XXXX</string>
+
+</resources>

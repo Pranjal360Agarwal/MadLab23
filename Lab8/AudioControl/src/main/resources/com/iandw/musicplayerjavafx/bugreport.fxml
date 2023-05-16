@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="288.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iandw.musicplayerjavafx.BugReportController">
+   <children>
+      <VBox prefHeight="288.0" prefWidth="400.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="403.0">
+               <children>
+                  <TextField fx:id="userNameField" prefHeight="25.0" prefWidth="190.0" promptText="name">
+                     <HBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></TextField>
+                  <TextField fx:id="userEmailField" prefHeight="25.0" prefWidth="190.0" promptText="email">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="400.0">
+               <children>
+                  <TextField fx:id="subjectField" prefHeight="25.0" prefWidth="390.0" promptText="subject">
+                     <HBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></TextField>
+               </children>
+            </HBox>
+            <TextArea fx:id="textArea" prefHeight="189.0" prefWidth="390.0" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin></TextArea>
+            <HBox alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="400.0">
+               <children>
+                  <HBox prefHeight="36.0" prefWidth="263.0">
+                     <children>
+                        <Label fx:id="statusLabel">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="consoleLogButton" mnemonicParsing="false" onAction="#insertConsoleLogClicked" text="Insert Log">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="sendButton" mnemonicParsing="false" onAction="#sendClicked" text="Send">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
